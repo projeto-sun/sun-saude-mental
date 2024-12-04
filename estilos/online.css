@@ -1,0 +1,133 @@
+.online-container {
+    width: 270px;
+    height: 488px;
+    background-color: #c0ffba;
+    padding: 20px 20px 13px 20px;
+    border-radius: 10px;
+}
+
+.especialista:hover {
+    font-weight: bold;
+    color: #30973e;
+    cursor: pointer;
+}
+
+.online-container h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.especialista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-top: 1px solid #54cc64;
+    cursor: pointer;
+}
+
+.especialista:first-child {
+    border-top: none;
+}
+
+.especialista:last-child {
+    padding-bottom: 0px;
+}
+
+.especialista-info {
+    display: flex;
+    align-items: center;
+}
+
+.especialista-avatar {
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    color: #39b54a;
+    font-size: 25px;
+}
+
+.details {
+    display: none;
+    /* Oculta por padrão */
+    position: absolute;
+    top: 0px;
+    right: -280px;
+    width: 230px;
+    height: 420px;
+    background-color: #bf997e;
+    padding: 17px;
+    border-radius: 8px;
+}
+
+.details.show {
+    display: block;
+    /* Exibe quando a classe "show" é adicionada */
+}
+
+.details h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img-perfil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img#perfil-marrom {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.details p {
+    margin-bottom: 20px;
+}
+
+p.online {
+    color: #854c24;
+    text-align: center;
+}
+
+p.exp {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+p.nota {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.avaliacao-frequente {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#avaliacao-imagem {
+    width: 150px;
+}
+
+.details i#fechar {
+    color: #854c24;
+    cursor: pointer;
+}
+
+.details button {
+    background-color: #bf997e;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    left: 9px;
+}

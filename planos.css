@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    --cabeçalho: #fbd300;
+    --fundo-claro: #fff8d4;
+    --fundo-verde: #d6ffd4;
+    --amarelinho: #ffee95;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--cabeçalho);
+}
+
+#frase {
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 0px;
+}
+
+header img {
+    width: 200px;
+
+}
+
+header>nav {
+    text-align: right;
+    align-self: center;
+}
+
+#atual {
+    color: black;
+    text-decoration: none;
+    margin-right: 17px;
+    background-color: #fef363;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+
+.nav {
+    color: black;
+    text-decoration: none;
+    margin-right: 17px;
+}
+
+.nav:hover {
+    background-color: #e9e9e993;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#melhor {
+    text-align: center;
+}
+
+
+
+div.card-plano {
+    background-color: lightgray;
+    width: 250px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.137);
+    overflow: hidden;
+}
+
+.header-card {
+    width: 250px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+
+.header-card img {
+    width: 65px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.flora {
+    height: 80px;
+}
+
+h2.plano-flora {
+    margin-top: 0px;
+}
+
+.header-card .corpo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-card h2.plano {
+    padding-left: 15px;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+.header-card p.tipo {
+    padding-left: 15px;
+    margin-top: 5px;
+    color: gray;
+}
+
+#preço-sun, #preço-bloom, #preço-free {
+    position: relative;
+    top: 12px;
+    text-align: center;
+}
+
+.header-card div.preço {
+    font-size: 13px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mes,
+.h2-preco {
+    margin: 0;
+}
+
+.mes {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+div.card-plano ul {
+    padding-left: 20px;
+}
+
+div.card-plano ul li {
+    line-height: 2em;
+    list-style: none;
+}
+
+
+div#mae {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px
+}
+
+#footer {
+    background-color: #ffee95;
+    padding: 10px;
+    padding-top: 15px;
+    display: flex;
+    height: 150px;
+    line-height: 1.5em;
+}
+
+#footer a {
+    color: #575757;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    font-weight: bold
+}
+
+#textos {
+    grid-column: 1;
+    margin-left: 50px;
+    width: 400px;
+    color: #575757;
+}
+
+img#pagamento {
+    grid-column: 2;
+}
+
+.card-plano:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.242);
+    transition: 0.6s;
+}
+
+#pagamento {
+    margin-top: 15px;
+    width: 350px;
+    height: 90px;
+}
+
+
+.wave-container {
+    width: 100%;
+    line-height: 0;
+    position: absolute;
+
+}
+
+svg {
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: auto;
+    /* Ajuste a altura conforme necessário */
+}

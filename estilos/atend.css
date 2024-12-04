@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --cabeçalho: #fbd300;
+    --fundo-claro: #fff8d4;
+    --fundo-verde: #d6ffd4;
+    --amarelinho: #ffee95;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+
+    overflow-x: hidden;
+}
+/*------------------------------------*/
+
+section {
+    margin-top: 10px;
+    background-color: #fff8d4;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    width: 50vw;
+    margin-top: -30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a.btn {
+    padding: 10px 30px;
+    border: 2px solid green;
+    background-color: #d6ffd4;
+    border-radius: 50px;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+img.onda {
+    position: absolute;
+    top: 63%;
+    z-index: 10;
+    width: 1550px;
+}

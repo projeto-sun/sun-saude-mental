@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro usuário</title>
+    <link rel="stylesheet" href="estilos/cad-user2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="paragrafos">
+        <p class="logar" id="logar-user">Já possui uma conta usuário? <br>Clique <a href="../logins/login.html">aqui</a>
+            para logar</p>
+        <p class="logar" id="logar-esp">Já possui uma conta especialista? <br> Clique <a
+                href="../logins/login-esp.html">aqui</a> para logar</p>
+    </div>
+
+    <div id="tela">
+        <main>
+            <img src="../imagens/flor-grande.png" class="flor1">
+            <img src="../imagens/florzinha 04.png" class="flor3">
+            <img src="../imagens/florzinha 03.png" class="flor2">
+            <img src="../imagens/flor-grande.png" class="flor4">
+            <img src="../imagens/florzinha-1.png" class="flor5">
+            <img src="../imagens/florzinha 04.png" class="flor6">
+            <img src="../imagens/florzinha 03.png" class="flor7">
+
+            <i id="voltar" class="material-icons" onclick="voltar()">arrow_back_ios</i>
+
+            <img src="../imagens/logo.png" alt="logo">
+
+            <h1>Cadastre-se!</h1>
+            <p>Acesse nossos <a href="#" id="termos">termos de privacidade</a> e entenda o <br> porquê solicitamos as
+                seguintes informações.
+            </p>
+
+            <form action="#">
+                <input type="number" name="idade" id="idade" placeholder="Idade" min="12" max="110" required> <br>
+                <p class="p-left">Você já foi diagnosticado com algum <br> transtorno mental?</p>
+                <div class="container">
+                    <div class="mae">
+                        <input type="radio" class="radio" name="opcao" id="ops" value="S">
+                        <label for="ops">Sim</label>
+                    </div>
+                    <div class="mae"></div>
+                    <input type="radio" class="radio" name="opcao" id="opn" value="N">
+                    <label for="opn">Não</label>
+                </div>
+                <p class="p-left">Se sim, qual ou quais?</p>
+                <input type="text" name="transt" id="transt" list="lsttranst">
+                <datalist id="lsttranst">
+                    <option value="Ansidedade"></option>
+                    <option value="Depressão"></option>
+                    <option value="Bulimia"></option>
+                </datalist>
+                <a href="#" class="btn">Cadastrar</a>
+            </form>
+            <p id="pag">2/2</p>
+        </main>
+    </div>
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff9c4" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,202.7C672,213,768,203,864,186.7C960,171,1056,149,1152,138.7C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <div class="fundo-onda"></div>
+
+
+
+    <script>
+        if (sessionStorage.getItem('formularioConcluido') !== 'true') {
+            alert('Você precisa preencher o formulário anterior.');
+            window.location.href = 'cad-user1.html'; // Redireciona de volta ao formulário
+        }
+
+        function voltar() {
+            history.back();
+        }
+    </script>
+</body>
+
+</html>

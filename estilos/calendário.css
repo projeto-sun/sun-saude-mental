@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar {
+    background-color: #ffee95;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    width: 350px;
+    height: 225px;
+}
+
+header.navegação {
+    margin-top: 0px;
+}
+
+header.cal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+header.cal h2 {
+    text-align: center;
+    color: #444;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #ffee95;
+    border: none;
+    font-size: 1em;
+    padding: 6px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1px;
+}
+
+thead th {
+    color: #424242;
+    font-weight: 550;
+}
+
+tbody td {
+    text-align: center;
+    padding: 4px;
+    padding-top: 3px;
+    border-radius: 16%;
+}
+
+tbody td:hover {
+    background-color: #ffe082;
+    cursor: pointer;
+}
+
+.prev-month, .next-month {
+    color: #e5bf00;
+}
+
+.highlight {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.highlight-today {
+    background-color: #fbd300;
+    color: #444;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #bf997e;
+    color: #80604a;
+    font-size: 12.5px;
+    padding: 8px;
+    border-radius: 0px 0px 10px 10px;
+    width: 354px;
+}
+
