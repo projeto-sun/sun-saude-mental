@@ -6,6 +6,8 @@
     <title>SUN - saúde mental</title>
    <link rel="stylesheet" href="estilos/navbar.css">
    <link rel="stylesheet" href="estilos/produtos.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <div class="topo">
@@ -21,6 +23,7 @@
             <a href="atendimento.html" class="nav">Atendimento</a>
             <a href="#" id = "atual">Produtos</a>
             <a href="artigo.html" class="nav">Artigo</a>
+            <i id="user" class="material-icons" onclick="abrirUser()">account_circle</i>
         </nav>
     </header>
     <div class="par1"><p>No SUN, buscamos levar os cuidados e a atenção para dentro da sua casa com produtos personalizados que ampliam sua capacidade de autoconhecimento e autocuidado. Nosso objetivo é incentivar a autoanálise, ajudando você a perceber as sensações e sentimentos do seu dia a dia, para que possa identificar e se atentar ao seu estado emocional. Pensando nisso, criamos o calendário inteligente, uma ferramenta útil e bonita, que promove sua inteligência emocional. </p>
@@ -41,7 +44,7 @@
     <div class="par2"><p>Com nosso calendário, você terá a oportunidade de se organizar de forma eficiente enquanto se conecta com suas emoções, promovendo autoconhecimento e equilíbrio mental. Se você se interessou ou deseja entender melhor sua saúde psicológica e acredita que nossos produtos podem ser úteis, clique no botão abaixo e comece sua jornada de autoconhecimento e organização!</p>
     </div>
     <div class="ond2"><img src="imagens/ond2" alt="ond2"></div>
-    <button id="compre"> <a href="https://www.magazineluiza.com.br/calendario-inteligente-caderno-inteligente/p/chhjfccb5d/pa/caln/?seller_id=delladistribuidoraltda&srsltid=AfmBOooJctxUj_Kz32ydl9vBdQIz7OjLCsL8Lcx_RIRb9Df6O7basLSKl40">Adquira o seu!</a></button>
+    <button id="compre"> <a href="https://www.magazineluiza.com.br/calendario-inteligente-caderno-inteligente/p/chhjfccb5d/pa/caln/?seller_id=delladistribuidoraltda&srsltid=AfmBOooJctxUj_Kz32ydl9vBdQIz7OjLCsL8Lcx_RIRb9Df6O7basLSKl40" id="compra">Adquira o seu!</a></button>
     <h2 class="titulo">Dê um olhada em nossos itens!</h2>
 
     <div class="carousel-container">
@@ -60,5 +63,10 @@
         <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
     <script src="produtos.js"></script>
+    <script>
+         function abrirUser(){
+            window.location.href = 'user.html';
+        }
+    </script>
 </body>
 </html>

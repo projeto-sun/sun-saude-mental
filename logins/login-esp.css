@@ -20,6 +20,7 @@ body {
 .paragrafos {
     width: 350px;
     position: absolute;
+    z-index: 2;
 }
 
 .cadastro {
@@ -28,6 +29,11 @@ body {
 
 p {
     line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: #2092db;
 }
 
 a:hover {

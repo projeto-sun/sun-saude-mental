@@ -20,6 +20,7 @@ body {
     width: 350px;
     margin: 30px 40px;
     position: absolute;
+    z-index: 2;
 }
 
 .logar {
@@ -80,6 +81,7 @@ main {
 #voltar {
     color: #a0a0a0;
     float: left;
+    cursor: pointer;
 }
 
 img {

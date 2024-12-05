@@ -11,8 +11,7 @@
 
 <body>
     <div class="paragrafos">
-        <p class="cadastro" id="cad-user1">Ainda não possui uma conta? <br> Clique <a href="#">aqui</a> para se cadastrar</p>
-        <!--Linkar com cadastro usuário-->
+        <p class="cadastro" id="cad-user1">Ainda não possui uma conta? <br> Clique <a href="../cadastros/cad-geral.html">aqui</a> para se cadastrar</p>
     </div>
 
     <div id="tela">
@@ -23,16 +22,18 @@
             <img src="../imagens/florzinha-1.png" class="flor5">
             <img src="../imagens/florzinha 04.png" class="flor6">
 
-            <a href="#"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
+            <i id="voltar" class="material-icons" id="icon-search" onclick="history.go(-1)">arrow_back_ios</i>
             <img src="../imagens/logo.png" alt="logo">
             <h1>Olá outra vez!</h1>
             <p>Que bom que voltou, sentimos sua falta! Insira <br> seus dados novamente para acessar o site 
             </p>
+
             <form action="../home.html" method="post">
                 <input type="email" name="email" id="email" placeholder="E-mail" required> <br>
                 <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="8"> <br>
                 <button class="btn" id="seguir">Entrar</button>
             </form>
+
         </main>
     </div>
     <div class="wave">
@@ -43,6 +44,7 @@
         </svg>
     </div>
     <div class="fundo-onda"></div>
+
 </body>
 
 </html>

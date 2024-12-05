@@ -23,6 +23,7 @@
             <a href="atendimento.html" class="nav">Atendimento</a>
             <a href="produtos.html" class="nav">Produtos</a>
             <a href="artigo.html" class="nav">Artigo</a>
+            <i id="user" class="material-icons" onclick="abrirUser()">account_circle</i>
         </nav>
     </header>
 
@@ -130,13 +131,19 @@
     <section id="footer">
         <div id="textos">
             <p>Não aceitamos reembolso. Leia nossa política <br>
-                de pagamento clicando <a href="#">aqui</a></p>
+                de pagamento clicando <a href="termos.html#planos">aqui</a></p>
             <p>Aceitamos pagamento em PIX, cartões de <br> débito e de crédito.</p>
         </div>
 
         <img src="imagens/pagamento.png" id="pagamento">
 
     </section>
+
+    <script>
+         function abrirUser(){
+            window.location.href = 'user.html';
+        }
+    </script>
 </body>
 
 </html>

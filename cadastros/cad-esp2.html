@@ -46,16 +46,17 @@
                     <label for="file-input" class="file-label">
                         <span id="file-name">Anexar currículo (PDF) </span>
                         <i class="material-icons" id="anexo">attach_file</i>
-                        <input type="file" id="file-input" accept=".pdf">
+                        <input type="file" id="file-input" accept=".pdf" required>
                     </label>
                 </div>
 
-                <input type="number" id="cip" placeholder="CIP">
+                <input type="number" id="cip" placeholder="CIP" required>
 
                 <textarea name="area" id="area" placeholder="Deixar comentário"></textarea> <br>
 
-                <button class="btn" id="cadatrar">Cadastrar</button>
+                <button type="submit" class="btn" id="cadatrar">Cadastrar</button>
             </form>
+
             <p id="pag">2/2</p>
         </main>
         <p class="logar">Se você já possui uma conta, clique <a href="../logins/login-esp.html">aqui</a></p>

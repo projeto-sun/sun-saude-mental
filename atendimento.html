@@ -84,6 +84,7 @@
             <a href="#" id="atual">Atendimento</a>
             <a href="produtos.html" class="nav">Produtos</a>
             <a href="artigo.html" class="nav">Artigo</a>
+            <i id="user" class="material-icons" onclick="abrirUser()">account_circle</i>
         </nav>
     </header>
 
@@ -357,6 +358,11 @@
             details.classList.remove("show");
             container.style.marginRight = ""
         });
+
+        
+        function abrirUser(){
+            window.location.href = 'user.html';
+        }
 
     </script>
 </body>

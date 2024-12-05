@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/atend.css">
+    <link rel="stylesheet" href="estilos/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div class="topo">
+        <p id="frase">Fique a vontade, aqui você é livre!</p>
+    </div>
+    <header>
+
+        <img src="imagens/logo.png" alt="logo">
+        <nav>
+            <a href="home.html" class="nav">Home</a>
+            <a href="transtornos.html" class="nav">Transtornos</a>
+            <a href="planos.html" class="nav">Planos</a>
+            <a href="#" id="atual">Atendimento</a>
+            <a href="produtos.html" class="nav">Produtos</a>
+            <a href="artigo.html" class="nav">Artigo</a>
+            <i id="user" class="material-icons" onclick="abrirUser()">account_circle</i>
+        </nav>
+    </header>
+
+    <section>
+        <p>Nesta aba você tem acesso ao nosso tão falado chat e às chamadas 
+            on-line com especialistas em saúde mental. Você pode encontrar chats de temas do seu interesse, em que há diversas dinâmicas e interação com outros usuários. Agora, clique no botão abaixo, explore e aproveite!</p>
+        <a href="atendimento2.html" class="btn">Atendimento</a>
+    </section>
+    <script>
+         function abrirUser(){
+            window.location.href = 'user.html';
+        }
+    </script>
+</body>
+</html>

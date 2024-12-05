@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Anotações</title>
     <link rel="stylesheet" href="nota.css">
 </head>
-
 <body>
-    <div class="notes">
-        <div class="add-note" id="addNote">
-            <p>+</p>
-        </div>
-        <div class="note-list" id="noteList">
-            <!-- As anotações serão exibidas aqui dinamicamente -->
-        </div>
-    </div>
+    <h1>Minhas Anotações</h1>
+    <div id="notesContainer"></div>
+    <button id="addNoteButton">Adicionar Anotação</button>
 
     <script>
-        // Redireciona para a página de criação de nova anotação
-        document.getElementById('addNote').addEventListener('click', () => {
-            window.location.href = 'nota-2.html';
-        });
+        // Exibir as anotações como imagens na página inicial
+        function displayNotes() {
+            const notesContainer = document.getElementById('notesContainer');
+            notesContainer.innerHTML = ''; // Limpar container
 
-        // Carrega as anotações salvas no localStorage
-        function loadNotes() {
             const notes = JSON.parse(localStorage.getItem('notes')) || [];
-            const noteList = document.getElementById('noteList');
 
-            // Limpa a lista antes de renderizar
-            noteList.innerHTML = '';
-
-            // Cria um elemento para cada anotação salva
             notes.forEach((note, index) => {
-                const noteElement = document.createElement('div');
-                noteElement.className = 'note';
-                noteElement.innerText = `Anotação ${index + 1}`;
-                noteElement.addEventListener('click', () => {
-                    // Redireciona para a página de edição, passando o índice da anotação na URL
+                const noteImage = document.createElement('img');
+                noteImage.src = 'note-icon.png';  // Imagem diretamente no mesmo diretório
+                noteImage.alt = 'Anotação';
+                noteImage.classList.add('note-image');
+                noteImage.style.cursor = 'pointer';
+
+                // Ao clicar na imagem, redireciona para a página de edição
+                noteImage.addEventListener('click', () => {
                     window.location.href = `nota-2.html?noteIndex=${index}`;
                 });
-                noteList.appendChild(noteElement);
+
+                notesContainer.appendChild(noteImage);
             });
         }
 
-        // Carrega as anotações ao iniciar a página
-        window.onload = loadNotes;
+        // Adicionar uma nova anotação
+        document.getElementById('addNoteButton').addEventListener('click', () => {
+            window.location.href = 'nota-2.html';
+        });
+
+        // Carregar as anotações ao abrir a página
+        window.onload = displayNotes;
     </script>
 </body>
-
 </html>

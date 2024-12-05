@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --cabeçalho: #fbd300;
+    --fundo-claro: #fff8d4;
+    --fundo-verde: #d6ffd4;
+    --amarelinho: #ffee95;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    
+    overflow-x: hidden;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--cabeçalho);
+}
+
+#frase {
+    color: white;
+    text-align: center;
+}
+
+#voltar {
+    color: gray;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#voltar:hover{
+    color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+header {
+    background-color: #ffee95;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+
+main {
+    background-color: #fff8d4;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    
+    margin: auto;
+    width: 55%;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+ol li {
+    font-size: 17px;
+}
+
+ol li a{
+    text-decoration: none;
+    color: black;
+}
+
+ol li a:hover{
+    text-decoration: underline;
+}
+
+.centro{
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+#subir{
+    text-decoration: none;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+}
