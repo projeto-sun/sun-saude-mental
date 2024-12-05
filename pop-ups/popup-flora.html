@@ -29,6 +29,8 @@
                 <a href="../atendimento.html" class="nav">Atendimento</a>
                 <a href="../produtos.html" class="nav">Produtos</a>
                 <a href="../artigo.html" class="nav">Artigo</a>
+                <i id="user" class="material-icons" onclick="abrirUser()">account_circle</i>
+
             </nav>
         </header>
 
@@ -163,6 +165,11 @@
 
 
     <script>
+
+        function abrirUser() {
+            window.location.href = 'user.html';
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
             const popup = document.querySelector('.pop-up');
             const closeButton = document.querySelector('.close-button');
