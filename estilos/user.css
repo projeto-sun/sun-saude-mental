@@ -102,6 +102,8 @@ img {
 .info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .since {
@@ -114,4 +116,57 @@ img {
     height: 100vh;
     border-radius: 20px 0px 0px 20px;
     box-shadow: -14px 3px 12px rgba(0, 0, 0, 0.137);
+}
+
+.header-popup {
+    border-radius: 20px;
+    width: 170px;
+    height: 71px;
+    display: flex;
+    background-color: #fef5ca;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tipo-plano, .nome-plano {
+    padding: 0;
+    margin: 0;
+}
+
+
+h2 {
+    font-size: 1.4em;
+}
+
+.header-popup img {
+    height: 80px;
+    margin: 0;
+    width: 65px;
+}
+
+.idade{
+    font-weight: bold;
+    color: gray;
+}
+
+.bio{
+    width: 443px;
+    text-align: justify;
+}
+
+.linha{
+    height: 1px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(167, 167, 167);
+}
+
+.hist{
+    color: rgb(155, 155, 155);
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.575);
+    border-radius: 20px;
 }
