@@ -12,6 +12,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    /*overflow-y: hidden;*/
 }
 
 .carousel-container {
@@ -20,7 +21,6 @@ body {
     max-width: 800px;
     margin: 40px auto;
     overflow: hidden;
-    margin-top: 60px;
 }
 
 .carousel {
@@ -33,6 +33,7 @@ body {
     position: relative;
     width: 150px;
     transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+    margin: 0 10px;
 }
 
 .slide img {
@@ -42,10 +43,7 @@ body {
 }
 
 .active {
-    transform: scale(1.3);
-    /* Aumenta a imagem central */
     width: 200px;
-    /* Largura maior para a imagem no centro */
     z-index: 2;
 }
 
@@ -83,57 +81,84 @@ p {
 }
 
 .par1 {
-    margin-left: 120px;
-    margin-top: 130px;
-    text-align: justify-all;
+    width: 80%;
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: center;
+}
+
+#onda-prod1 {
+    width: 110%;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+}
+
+#onda-prod2 {
+    z-index: -1;
+    width: 140%;
+    top: 530px;
+    position: absolute;
 }
 
 .par2 {
-    margin-left: 130px;
-    margin-top: 150px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-evenly;
     text-align: justify;
+    align-items: center;
 }
 
 .par3 {
-    margin-left: 740px;
-    margin-top: 130px;
-    text-align: justify-all;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: center;
 }
 
-#compre {
-    margin-top: 100px;
-    margin-left: 290px;
-    height: 40px;
-    width: 120px;
-    border-radius: 12px;
-    border-color: #ffc30f;
+.par3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
     background-color: #ffc30f;
-    font-weight: bolder;
-}
-
-a#compra:hover {
-    background-color: #dfa701;
-    color: whitesmoke;
-    border-color: #dfa701;
-}
-
-#compre:hover {
-    background-color: #dfa701;
-    color: whitesmoke;
-    border-color: #dfa701;
-}
-
-a#compra {
+    color: #000;
     text-decoration: none;
-    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0a800;
 }
 
 .titulo {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 80px;
+    font-family: 'Katibeh', serif;
+    font-size: 35px;
+    letter-spacing: 1px;
 }
 
-.ond1 {
-    height: 50px;
-    width: 100px;
+#calen1 {
+    height: 150px;
+}
+
+#calen3 {
+    height: 350px;
 }

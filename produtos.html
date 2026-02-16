@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUN - saúde mental</title>
-   <link rel="stylesheet" href="estilos/navbar.css">
-   <link rel="stylesheet" href="estilos/produtos.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/navbar.css">
+    <link rel="stylesheet" href="estilos/produtos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
+
 <body>
     <div class="topo">
         <p id="frase">Fique a vontade, aqui você é livre!</p>
@@ -21,52 +23,72 @@
             <a href="transtornos.html" class="nav">Transtornos</a>
             <a href="planos.html" class="nav">Planos</a>
             <a href="atendimento.html" class="nav">Atendimento</a>
-            <a href="#" id = "atual">Produtos</a>
+            <a href="#" id="atual">Produtos</a>
             <a href="artigo.html" class="nav">Artigo</a>
             <i id="user" class="material-icons" onclick="abrirUser()">account_circle</i>
         </nav>
     </header>
-    <div class="par1"><p>No SUN, buscamos levar os cuidados e a atenção para dentro da sua casa com produtos personalizados que ampliam sua capacidade de autoconhecimento e autocuidado. Nosso objetivo é incentivar a autoanálise, ajudando você a perceber as sensações e sentimentos do seu dia a dia, para que possa identificar e se atentar ao seu estado emocional. Pensando nisso, criamos o calendário inteligente, uma ferramenta útil e bonita, que promove sua inteligência emocional. </p>
+    <main>
+        <section class="par1">
+            <img src="imagens/onda-prod1.png" id="onda-prod1" alt="onda">
+            <p>No SUN, buscamos levar os cuidados e a atenção para dentro da sua casa com produtos personalizados que
+                ampliam sua capacidade de autoconhecimento e autocuidado. Nosso objetivo é incentivar a autoanálise,
+                ajudando você a perceber as sensações e sentimentos do seu dia a dia, para que possa identificar e se
+                atentar ao seu estado emocional. Pensando nisso, criamos o calendário inteligente, uma ferramenta útil e
+                bonita, que promove sua inteligência emocional. </p>
+            <img src="imagens/calendar1.png" alt="calendario" id="calen1">
+        </section>
 
-    </div>
-    <div class="ond1"><img src="imagens/ond1" alt="ond1"></div>
-    <div class="par3"><p>
-        Calendário Inteligente SUN: Organização & Autoconhecimento em um só lugar <br>
-            <strong>• Mais que apenas organização:</strong> Monitore seus compromissos e emoções diárias. <br>
-            <strong>• Design personalizável:</strong> Ajuste o calendário com discos e cartões que se adaptam à sua rotina. <br>
-            <strong>• Marque emoções:</strong> Adicione cores e estilos para personalizar e refletir seus momentos especiais. <br>
-            <strong>• Praticidade e bem-estar:</strong> Perfeito para quem busca equilíbrio entre organização e autoconhecimento.
-            Comece a explorar o poder da organização emocional e mantenha seu espaço e mente em harmonia!
-    </p>
-        
-    </div>
-    <div class="cal1"><img src="imagens/cal1" alt="cal1"></div>
-    <div class="par2"><p>Com nosso calendário, você terá a oportunidade de se organizar de forma eficiente enquanto se conecta com suas emoções, promovendo autoconhecimento e equilíbrio mental. Se você se interessou ou deseja entender melhor sua saúde psicológica e acredita que nossos produtos podem ser úteis, clique no botão abaixo e comece sua jornada de autoconhecimento e organização!</p>
-    </div>
-    <div class="ond2"><img src="imagens/ond2" alt="ond2"></div>
-    <button id="compre"> <a href="https://www.magazineluiza.com.br/calendario-inteligente-caderno-inteligente/p/chhjfccb5d/pa/caln/?seller_id=delladistribuidoraltda&srsltid=AfmBOooJctxUj_Kz32ydl9vBdQIz7OjLCsL8Lcx_RIRb9Df6O7basLSKl40" id="compra">Adquira o seu!</a></button>
-    <h2 class="titulo">Dê um olhada em nossos itens!</h2>
+        <section class="par2">
+            <img src="imagens/calendar3.png" alt="calendario" id="calen2">
+            <p>Calendário Inteligente SUN: Organização & Autoconhecimento em um só lugar <br>
+                <strong> • Mais que apenas organização:</strong> Monitore seus compromissos e emoções diárias. <br>
+                <strong>• Design personalizável:</strong> Ajuste o calendário com discos e cartões que se adaptam à sua
+                rotina. <br>
+                <strong>• Marque emoções:</strong> Adicione cores e estilos para personalizar e refletir seus momentos
+                especiais. <br>
+                <strong> • Praticidade e bem-estar:</strong> Perfeito para quem busca equilíbrio entre organização e
+                autoconhecimento.
+                <br> Comece a explorar o poder da organização emocional e mantenha seu espaço e mente em harmonia!
+            </p>
+        </section>
 
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="slide active">
-                <img src="imagens/car1" alt="Imagem 1">
+        <section class="par3">
+            <div>
+                <img src="imagens/onda-prod2.png" alt="onda" id="onda-prod2">
+                <p>Com nosso calendário, você terá a oportunidade de se organizar de forma eficiente enquanto se conecta com suas emoções, promovendo autoconhecimento e equilíbrio mental. Se você se interessou ou deseja entender melhor sua saúde psicológica e acredita que nossos produtos podem ser úteis, clique no botão abaixo e comece sua jornada de autoconhecimento e organização!</p>
+                <button onclick="window.open('https://www.cadernointeligente.com.br/collections/calendarios/products/calendario-white?variant=39525472305241', '_blank')">Adquira o seu!</button>
             </div>
-            <div class="slide">
-                <img src="imagens/car2" alt="Imagem 2">
+            <img src="imagens/calendar2.png" alt="calendario" id="calen3">
+        </section>
+
+
+        <h2 class="titulo">Dê um olhada em nossos itens!</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="imagens/car1.png" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="imagens/car2.png" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="imagens/car3.png" alt="Imagem 3">
+                </div>
+                <div class="slide">
+                    <img src="imagens/car4.png" alt="Imagem 4">
+                </div>
             </div>
-            <div class="slide">
-                <img src="imagens/car3" alt="Imagem 3">
-            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
+    </main>
     <script src="produtos.js"></script>
     <script>
-         function abrirUser(){
+        function abrirUser() {
             window.location.href = 'user.html';
         }
     </script>
 </body>
+
 </html>

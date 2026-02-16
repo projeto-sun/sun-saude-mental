@@ -21,6 +21,80 @@ body {
     overflow-y: hidden;
 }
 
+main {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #00000000 #00000000
+}
+
+.plano-atual {
+    background-color: #fef5ca;
+    border-radius: 20px;
+    padding: 10px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#info-1 {
+    justify-content: space-between;
+}
+
+span h3,
+span p {
+    margin: 0;
+}
+
+#info-2 {
+    margin: 30px 0px;
+    display: flex;
+    color: #8a8787;
+    justify-content: space-between;
+    border-bottom: 1px solid #8a878743;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+#info-2>div>p {
+    margin: 0;
+}
+
+.especialista {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid #8a878743;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avaliacao img {
+    width: 30px;
+}
+
+.img-especialista {
+    width: 40px;
+    height: 40px;
+}
+
+p#bio {
+    width: 350px;
+    text-align: justify;
+}
+
+#img-plano {
+    width: 50px;
+}
+
 .geral {
     display: flex;
 }
@@ -53,6 +127,9 @@ nav {
 
 img {
     width: 100px;
+}
+
+#logo-lado {
     margin-bottom: 25px;
 }
 
@@ -114,4 +191,41 @@ img {
     height: 100vh;
     border-radius: 20px 0px 0px 20px;
     box-shadow: -14px 3px 12px rgba(0, 0, 0, 0.137);
+    padding-left: 50px;
+}
+
+.humor h1 {
+    font-family: "Katibeh", serif;
+    font-size: 45px;
+    margin: 20px 0px;
+}
+
+.humor p {
+    width: 80%;
+    text-align: justify;
+}
+
+/*-------------------------*/
+.emoçoes {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.emoçoes img {
+    width: 40px;
+    height: 40px;
+}
+
+.gray-img {
+    filter: grayscale(100%);
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    resize: none;
 }
